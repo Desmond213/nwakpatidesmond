@@ -124,7 +124,6 @@ h1, h2, h3 {
     background-image: url(/images/portfolioimg3.jpeg);
     background-size: cover;
     border: 2px solid white;
-    /* background-position: center; */
 }
 
 .herocontent{
@@ -227,11 +226,18 @@ h1, h2, h3 {
       background-color: transparent;
     }
 
+    .hero{
+        margin-top: 0px;
+        gap: 0;
+    }
+
     .heroimg{
         height: 300px;
         max-width: 300px;
     }
 }
+
+
 
 @media (max-width: 961px) {
     .navbar{
@@ -358,6 +364,7 @@ h1, h2, h3 {
     .gettoknowmecontainer{
       padding-left: 1.875rem;
       padding-right: 1.875rem;
+      padding-bottom: 80px;
     }
     
     .knowmewriteup p{
