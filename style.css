@@ -558,7 +558,7 @@ h1, h2, h3 {
     background-color: #EEEFF3;
     border-radius: 10px;
     padding-top: 15px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
     padding-left: 15px;
     padding-right: 15px;
     display: flex;
@@ -657,12 +657,7 @@ h1, h2, h3 {
 
 @media (max-width: 567px) {
     .projectone{
-        padding-bottom: 20;
-        padding-bottom: 40px;
-    }
-
-    .projectonecontent{
-        height: 225px;
+        padding-bottom: 10px;
     }
 
     .projectonecontent h3{
@@ -693,7 +688,7 @@ h1, h2, h3 {
     background-color: #EEEFF3;
     border-radius: 10px;
     padding-top: 15px;
-   padding-bottom: 60px;
+    padding-bottom: 40px;
     padding-left: 15px;
     padding-right: 15px;
     display: flex;
@@ -791,12 +786,7 @@ h1, h2, h3 {
 
 @media (max-width: 567px) {
     .projecttwo{
-        padding-bottom: 0;
-        padding-bottom: 40px;
-    }
-
-    .projecttwocontent{
-        height: 225px;
+        padding-bottom: 10px;
     }
 
     .projecttwocontent h3{
@@ -827,7 +817,7 @@ h1, h2, h3 {
     background-color: #EEEFF3;
     border-radius: 10px;
     padding-top: 15px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
     padding-left: 15px;
     padding-right: 15px;
     display: flex;
@@ -926,12 +916,7 @@ h1, h2, h3 {
 
 @media (max-width: 567px) {
     .projectthree{
-        padding-bottom: 0;
-        padding-bottom: 40px;
-    }
-
-    .projectthreecontent{
-        height: 225px;
+        padding-bottom: 10px;
     }
 
     .projectthreecontent h3{
