@@ -33,14 +33,60 @@ function controlMenu() {
     const screenHeight = window.innerHeight;
 
     if (aboutTop <= screenHeight * 0.6 && footerTop > screenHeight * 0.8) {
-        menu.classList.remove("hide"); // show menu
+        menu.classList.remove("hide"); 
     } else {
-        menu.classList.add("hide"); // hide menu
+        menu.classList.add("hide"); 
     }
 
 }
 
 window.addEventListener("scroll", controlMenu);
 
-/* hide menu when page loads */
+
 menu.classList.add("hide");
+
+// for the typing texts
+const phrases = [
+  "Nwakpati Desmond",
+  "Creative.",
+  "Problem Solver."
+];
+
+const typingElement = document.getElementById("typing");
+let phraseIndex = 0;
+let letterIndex = 0;
+let currentPhrase = '';
+let isDeleting = false;
+let typingSpeed = 150;
+
+function type() {
+    const fullText = phrases[phraseIndex];
+
+    if(!isDeleting) {
+        // add letters
+        currentPhrase = fullText.slice(0, letterIndex + 1);
+        letterIndex++;
+    } else {
+        // delete letters
+        currentPhrase = fullText.slice(0, letterIndex - 1);
+        letterIndex--;
+    }
+
+    typingElement.textContent = currentPhrase;
+
+    if(!isDeleting && letterIndex === fullText.length){
+        isDeleting = true;
+        setTimeout(type, 1000); 
+        return;
+    } 
+    else if(isDeleting && letterIndex === 0){
+        isDeleting = false;
+        phraseIndex = (phraseIndex + 1) % phrases.length; 
+        setTimeout(type, 500); 
+        return;
+    }
+
+    setTimeout(type, isDeleting ? typingSpeed / 2 : typingSpeed);
+}
+
+type();
