@@ -20,3 +20,27 @@ document.addEventListener("click", (e) => {
         navlist.classList.remove("active");
     }
 });
+
+// for the menu
+const menu = document.getElementById("floatingMenu");
+const aboutSection = document.querySelector("#aboutme");
+const footer = document.querySelector(".footer");
+
+function controlMenu() {
+
+    const aboutTop = aboutSection.getBoundingClientRect().top;
+    const footerTop = footer.getBoundingClientRect().top;
+    const screenHeight = window.innerHeight;
+
+    if (aboutTop <= screenHeight * 0.6 && footerTop > screenHeight * 0.8) {
+        menu.classList.remove("hide"); // show menu
+    } else {
+        menu.classList.add("hide"); // hide menu
+    }
+
+}
+
+window.addEventListener("scroll", controlMenu);
+
+/* hide menu when page loads */
+menu.classList.add("hide");
