@@ -49,7 +49,6 @@ menu.classList.add("hide");
 const phrases = [
   "Nwakpati Desmond",
   "Creative.",
-  "Problem Solver."
 ];
 
 const typingElement = document.getElementById("typing");
@@ -90,3 +89,23 @@ function type() {
 }
 
 type();
+
+// TO CHANGE ACTIVE COLOR
+
+const menuLinks = document.querySelectorAll(".menu a");
+
+menuLinks.forEach(function(link){
+
+    link.addEventListener("click", function(){
+
+        // remove active from all icons
+        menuLinks.forEach(function(item){
+            item.classList.remove("active");
+        });
+
+        // add active to clicked icon
+        this.classList.add("active");
+
+    });
+
+});

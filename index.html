@@ -8,12 +8,13 @@
     <script src="https://kit.fontawesome.com/703cd02033.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://api.fontshare.com/css?f[]=clash-display@400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
 <body>
     <!-- navbar -->
-    <header class="head">
+    <header class="head" id="head">
         <nav class="navbar">
-            <h2 class="logo"></h2>
+            <h2 class="logo">Dezmond</h2>
             <ul class="navlist">
                 <li><a href="#">Home</a></li>
                 <li><a href="#aboutme">About</a></li>
@@ -25,7 +26,7 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
        </nav>
-       <div class="hero">
+       <div class="hero" id="hero">
          <div class="heroimg" data-aos="fade-right"></div>
          <div class="herocontent" data-aos="fade-right">
             <h3>Hello, I'm</h3>
@@ -42,7 +43,7 @@
     <div class="gettoknowmecontainer" id="aboutme">
         <h1 data-aos="zoom-out">Get To <span style="color: #0845a4;">Know Me</span></h1>
         <div class="knowme">
-            <div class="knowmewriteup" data-aos="zoom-in">
+            <div class="knowmewriteup" data-aos="zoom-in" id="knowme">
                 <p>I’m a front-end developer who enjoys learning by building and experimenting. I’m always working on improving my skills and exploring new ideas through personal projects and foundation work. I care about creating clean, intuitive interfaces and using technology in ways that are both practical and impactful.</p>
                 <p>I mainly focus on bringing designs to life with HTML, CSS, and JavaScript, and I enjoy the challenge of making websites responsive, accessible, and easy to use. I’m constantly learning, staying curious about new tools and trends, and looking for opportunities to grow as a developer.</p>
             </div>
@@ -56,7 +57,7 @@
             <div class="skillone">
                 <div class="skillhtml"></div>
             </div>
-            <div class="skillone">
+            <div class="skillone" id="skills">
                 <div class="skillcss"></div>
             </div>
             <div class="skillone">
@@ -73,7 +74,7 @@
 
     <div class="myprojects" id="myprojects">
         <h1 data-aos="zoom-out">My Projects.</h1>
-        <div class="projectonecontainer">
+        <div class="projectonecontainer" id="projects">
             <div class="projectone" data-aos="zoom-in">
                 <div class="projectoneimg"></div>
                 <div class="projectonecontent">
@@ -137,25 +138,28 @@
         <div class="getintouch" data-aos="zoom-in">
             <div class="contactinfo">
                 <div class="contact-item">
-                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-regular fa-envelope"></i>
                     <div class="contact-text">
                     <h2>Email</h2>
                     <p>dnwakati@gmail.com</p>
                     </div>
+                    <a href="mailto:dnwakpati@gmail.com?subject=Website Inquiry"><div class="writeme">Write to Me<span class="material-symbols-outlined">arrow_right</span></div></a>
                </div>
                <div class="contact-item">
-                    <i class="fa-solid fa-phone"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
                     <div class="contact-text">
-                    <h2>Phone</h2>
+                    <h2>Whatsapp</h2>
                     <p>+234 903 715 5472</p>
                     </div>
+                    <a href="https://wa.me/2349037155472" target="_blank"><div class="writeme">Write to Me<span class="material-symbols-outlined">arrow_right</span></div></a>
                 </div>
                 <div class="contact-item">
-                    <i class="fa-solid fa-location-dot"></i>
+                    <i class="fa-brands fa-instagram"></i>
                     <div class="contact-text">
-                    <h2>Location</h2>
-                    <p>Nigeria</p>
+                    <h2>Instagram</h2>
+                    <p>desmond_gram01</p>
                     </div>
+                    <a href="https://www.instagram.com/desmond_gram01"><div class="writeme">Write to Me<span class="material-symbols-outlined">arrow_right</span></div></a>
                 </div>
             </div>
             <div class="contactform">
@@ -164,7 +168,7 @@
 
                     <input type="email" name="email" id="" placeholder="Email" required>
 
-                    <textarea name="message" placeholder="Message" required></textarea>
+                    <textarea name="message" placeholder="Write your Message" required></textarea>
 
                     <button type="submit">Send Message</button>
                 </form>
@@ -174,11 +178,11 @@
 
     <div class="menucontainer">
         <div class="menu" id="floatingMenu">
-            <img src="images/home.png" alt="">
-            <img src="images/person.png" alt="">
-            <img src="images/book.png" alt="">
-            <img src="images/tool-box.png" alt="">
-            <img src="images/message.png" alt="">
+            <a href="#head"><img src="images/home.png" alt=""></a>
+            <a href="#knowme"><img src="images/person.png" alt=""></a>
+            <a href="#skills"><img src="images/book.png" alt=""></a>
+            <a href="#projects"><img src="images/tool-box.png" alt=""></a>
+            <a href="#contactus"><img src="images/message.png" alt=""></a>
         </div>
     </div>
 

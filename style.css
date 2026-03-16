@@ -31,6 +31,10 @@ body{
     overflow-x: hidden;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 h1, h2, h3 {
   font-family: "Clash Display", sans-serif;
   font-weight: 700; 
@@ -40,7 +44,7 @@ h1, h2, h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 14px 28px;
+    padding: 14px 20px;
     height: 70px;
     background-color: white;
     backdrop-filter: blur(10px);
@@ -58,10 +62,10 @@ h1, h2, h3 {
 }
 
 .logo{
-    font-family: var(---mainfont);
-    font-size: 1.6rem;
+    /* font-family: var(---mainfont); */
+    font-size: 1rem;
     font-weight: 600;
-    color: #000000;
+    color: #A7A7AA;
 }
 
 .navlist{
@@ -227,7 +231,7 @@ h1 span#typing {
 
     .herocontent h1{
         text-align: center;
-        font-size: 40px;
+        font-size: 42px;
     }
 
     .herocontent p{
@@ -1079,19 +1083,27 @@ h1 span#typing {
 .contactinfo{
     width: 100%;
     max-width: 422px;
-    background-color: white;
-    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.3);
+    /* background-color: white;
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.3); */
     border-radius: 10px;
     padding: 32px;
 
     display: flex;
     flex-direction: column;
     gap: 20px; 
+    height: 600px;
 }
 
 .contact-item {
-    display: flex;
     gap: 16px;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.contact-item a{
+    text-decoration: none;
 }
 
 .contact-item i {
@@ -1101,9 +1113,10 @@ h1 span#typing {
 }
 
 .contact-text h2 {
-    font-size:  1.4375rem;;
+    font-size:  1.1rem;;
     font-family: var(---tryoutfont);
     font-weight: 500;
+    padding-top: 5px;
 }
 
 .contact-text p {
@@ -1112,6 +1125,21 @@ h1 span#typing {
     font-family: var(---tryoutfont);
     font-size: 0.9375rem;
 }
+
+.writeme{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-family: var(---secondaryfont);
+    color: #555;
+}
+
+.material-symbols-outlined{
+   color: blue;
+}
+
+
 
 .contactform{
     width: 100%;
@@ -1170,6 +1198,12 @@ h1 span#typing {
 @media (max-width: 1194px) {
     .getintouch{
         flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 567px) {
+    .getintouch{
+        gap: 0px;
     }
 }
 
@@ -1263,7 +1297,6 @@ h1 span#typing {
     align-items: center;
     background-color: #EEEFF3;
     padding-bottom: 20px;
-
 }
 
 .menu{
@@ -1298,7 +1331,11 @@ h1 span#typing {
     width: 26px;
     background-color: white;
     border-radius: 50%;
-    padding: 2px;
+    padding: 4px;
+}
+
+.menu a.active img{
+    background-color: black;
 }
 
 html, body {
